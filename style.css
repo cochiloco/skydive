@@ -49,7 +49,7 @@ h5 {
 /*Nav Section*/
 #nav-selector {
     background-color: rgb(25, 33, 41);
-    padding: 14px 0px 14px 0px;
+    padding: 40px 0px 40px 0px;
 }
 
 #nav-selector a {
@@ -61,11 +61,14 @@ h5 {
 .nav-bar-ul {
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .nav-bar-ul li {
     list-style-type: none;
     text-align: center;
+    padding: 10%; /*NewlineByMe*/
+    display: inline; /*NewlineByMe*/
 }
 
 /*Header Section*/
@@ -84,9 +87,15 @@ header > h2 {
 }
 
 header > aside {
-    font-size: 2.5em;
-
+    font-size: 3.5em;
+    text-align: center;
 }
+
+header span { /*NewlineByMe*/
+    font-weight: bold; /*NewlineByMe*/
+    color: black; /*NewlineByMe*/
+}
+
 /* Section 1 */
 .dark-background {
     background-color: rgb(25, 33, 41);
@@ -104,10 +113,11 @@ header > aside {
     background-color: rgb(67, 163, 230);
     color: white;
     font-family: Roboto Condensed;
-    font-size: 2em;
+    font-size: 2.5em;
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding: 2% 10%; /*NewlineByMe*/
 }
 
 .container {
@@ -148,7 +158,7 @@ header > aside {
 
 #hr-tag {
     margin: 20px auto 30px auto;
-    width: 40%;
+    width: 50%;
 }
 
 #team .section-text {
