@@ -18,7 +18,7 @@
     </nav>
 <!-- Header Section-->
 
-    <header id="header-selector">
+    <header class="header-selector">
 
         <h1> <img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png" alt="School Logo"> IronSkydive</h1>
         <h2>Let the Trip begin</h2>
@@ -33,19 +33,19 @@
         <article class="container">
             <h3>Hello!</h3>
             <p>Welcome to Skydive, the best adventure of your life. </p>
-            <a href="#">Learn More</a>
+            <a class="link-btn" href="#">Learn More</a>
         </article>
         
         <article class="container">
             <h3>About Us</h3>
             <p>We like a lot programming websites, but we also love to practice sport</p>
-            <a href="#">Watch Video </a>
+            <a class="link-btn" href="#">Watch Video </a>
         </article>
         
         <article class="container">
             <h3>Wanna join?</h3>
             <p>Join our fitness program to be in good shape while you learn.</p>
-            <a href="#">Register</a>
+            <a class="link-btn" href="#">Register</a>
         </article>
     </section>
 
@@ -86,7 +86,7 @@
     <section id="team" class="dark-background">
         <h3>Team</h3>
         <p class="section-text">Our team collectively has 75years of experience. Odds are, when you jump out of the plane with these pros, you won't go splat!</p>
-        <hr id="hr-tag"> /*this is a horizontal rule*/
+        <hr id="hr-tag"> <!--Horizontal Rule tag-->
         <div>
             <article>
                 <h4 class="team-member">Harold Rothstein</h4>
@@ -151,20 +151,53 @@
             </tbody>
         </table>
         <h3>Schedule a time slot</h3>
+        
+        <!---------------------Form Section----------------------->
+        
+        <form class="slot-form" action="/register" method="post">
+
+            <div class="slot-form-container">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="slot-form-container">
+                <label for="participants"> Participants</label>
+                <input type="number" placeholder="Number of Participants">
+            </div>
+
+            <div class="slot-form-container">
+                <label for="date">Date</label>
+                <input type="date">
+            </div>
+
+            <div class="slot-form-container">
+                <label for="time">Time</label>
+                <select>
+                    <option value="early"> 9:00 - 11:00 </option>
+                    <option value="mid"> 12:00 - 14:00 </option>
+                    <option value="late"> 15:00 - 17:00 </option>
+                  </select>
+            </div>
+
+            <div class="slot-form-container">
+                <button type="submit"> Reserve your slot! </button>
+            </div>
+
+        </form>
+        <!---------------------Ends Form Section----------------------->
     </section>
 <!--Footer-->
     <footer class="dark-background footer">
         <section>
             <h5>Contact Information</h5>
-            <br>
             <address class="address"> 
-                <em>
+            
                     IronSkydive 
                     <br>33, Rue La Fayette,
                     <br>75009 Paris 
                     <br>France
                     <br> +33 (0) 619 193 088 
-                </em>
             </address>
             <h5>Follow Us</h5>
             <ul>
@@ -173,6 +206,13 @@
                 <li class="footer"> <a href="#" target="_blank"> Instagram</a></li>
             </ul>
         </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.142047744348!2d2.3354330160472316!3d48.87456857928921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e38f817b573%3A0x48d69c30470e7aeb!2sIronhack!5e0!3m2!1sen!2ses!4v1495208746099"
+            class="map-frame"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen>
+        </iframe>
     </footer>
 
 </body>

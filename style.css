@@ -62,33 +62,43 @@ h5 {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-bar-ul li {
     list-style-type: none;
     text-align: center;
-    padding: 10%; /*NewlineByMe*/
-    display: inline; /*NewlineByMe*/
+    display: inline; NewlineByMe
+    
+   
 }
 
 /*Header Section*/
 
-#header-selector {
+.header-selector {
     background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
     position: 0 0;
     height: 650px;
     size: cover;
     padding-top: 50px;
+    position: relative;
 }
 
 header > h2 {
     color: white;
     text-shadow: #020819 8px -20px 9px;
+     /* these styles are only for h2 tags that are 
+     direct children of the header tag. 
+     These styles don't apply to h2 tag children 
+     or header grandchildren */
 }
 
 header > aside {
     font-size: 3.5em;
-    text-align: center;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
 }
 
 header span { /*NewlineByMe*/
@@ -97,6 +107,23 @@ header span { /*NewlineByMe*/
 }
 
 /* Section 1 */
+
+#general-information {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#general-information .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+}
+
+.link-btn{
+    padding: 10px 30px;
+}
+
 .dark-background {
     background-color: rgb(25, 33, 41);
     color: white;  
@@ -128,6 +155,16 @@ header span { /*NewlineByMe*/
 
 /* Section 2 */ 
 
+#structure > div{
+    /* these styles are for all divs 
+     inside section with id structure */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+} 
+
 .service-box {
     font-size: 1.7em;
     text-align: center;
@@ -145,6 +182,18 @@ header span { /*NewlineByMe*/
 }
 
 /* Section 3 */
+
+#team > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 #team {
     padding: 75px 0;
@@ -189,26 +238,69 @@ header span { /*NewlineByMe*/
     text-align: center;
 }
 
-/*Footer*/
-footer {
+.slot-form-container {
+    width: 40%;
+    margin: 18px auto 0 auto;
+    font-size: 1.5em;
     text-align: center;
-    font-size: 1.9em;
-    padding: 40px 100px;
-    margin-bottom: 25px;
 }
+
+.slot-form-container label {
+    line-height: 15px;
+    margin: 5px;
+}
+
+.slot-form-container > input, select {
+    height: 20px;
+    outline: none;
+    padding: 3px;
+    width: 100%;
+}
+
+.slot-form-container > button {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 9px;
+    margin-top: 15px;
+}
+
+/*Footer*/
+
+.map-frame {
+    height: 375px;
+    width: 60%;
+}
+
+.footer {
+    font-size: 1.9em;
+    text-align: center;
+    padding: 40px 100px;
+    margin-bottom: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .address {
     font-size: 0.8em;
     font-style: normal;
-    margin: 30px;
+    margin-bottom: 30px;
 }
 
-footer a {
+.footer a {
     color:rgb(67, 163, 230);
     text-decoration: none;
+    font-size: 0.5em;
 }
 
-footer ul {
+.footer ul {
     list-style: none;
     padding: 0;
+    font-size: 1em;
+}
+
+.footer li {
+    padding: 1px;
+    
 }
